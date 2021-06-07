@@ -11,7 +11,7 @@ const forecast = (lat,long,callback)=>{
         callback("Wrong Cordinates provided", undefined);
      } else {
       const current =body.current;
-      callback(undefined,current.weather_descriptions[0]+" .Its feels like "+ current["feelslike"] +"but currently is"+current["temperature"]);
+      callback(undefined,current.weather_descriptions[0]+" .Its feels like "+ current["feelslike"] +" but currently is "+current["temperature"] + " and humidity is "+ current["humidity"]);
      }
   });
   
